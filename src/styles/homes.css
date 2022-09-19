@@ -1,0 +1,144 @@
+@import url('../fonts/fonts.css');
+
+:root {
+    --color-primary: #383838;
+    --color-seconadary: #3077c6;
+    --color-third: #bfbfbf;
+    --bg-color-primary: #eaf0f9;
+    --bg-color-secondary: #10367c;
+    --bg-color-third: #f5bd41;
+    --bg-color-fourth: #f3f3f4;
+    --radius: 8px;
+    --line-height: 1.17em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    fill: currentColor;
+}
+
+.homes {
+    background-color: var(--bg-color-primary);
+    padding-left: 104px;
+    padding-right: 88px;
+}
+
+.homes__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: var(--line-height);
+    padding-top: 120px;
+    padding-bottom: 105px;
+    color: var(--color-primary);
+}
+
+.homes__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.homes__item {
+    margin-bottom: 121px;
+}
+
+.homes__image {
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+.homes__subtitle {
+    color: var(--color-seconadary);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: var(--line-height);
+}
+
+.homes__desc {
+    margin-top: 24px;
+    color: var(--color-third);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: var(--line-height);
+}
+
+/*Media*/
+
+@media screen and (max-width: 1232px) {
+    .homes__title {
+        padding-top: 100px;
+    }
+
+    .homes__image {
+        margin-bottom: 15px;
+    }
+
+    .homes__subtitle,
+    .homes__desc {
+        font-size: 18px;
+    }
+
+    .homes__desc {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .homes {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .homes__title {
+        font-size: 28px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .homes__item:nth-child(3) {
+        display: none;
+    }
+
+    .homes__item {
+        margin-right: 16px;
+        margin-bottom: 40px;
+    }
+
+    .homes__subtitle,
+    .homes__desc {
+        font-size: 15px;
+    }
+
+    .homes__desc {
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homes {
+        padding-left: 17px;
+        padding-right: 0;
+    }
+
+    .homes__title {
+        padding-bottom: 32px;
+    }
+    .homes__list {
+        justify-content: center;
+    }
+}
