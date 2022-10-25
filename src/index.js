@@ -1,4 +1,5 @@
 import React from 'react';
+window.React = React;
 import ReactDOM from 'react-dom/client';
 import './styles/homes.css';
 import Homes from "./components/homes.js";
